@@ -1,60 +1,100 @@
-# oMenu4 — Cardápio Digital Interativo com Acessibilidade 🎯
+# 🍽️ oMenu — Cardápio Digital Interativo com Acessibilidade  
 
-## Sobre o Projeto
+## 📌 Sobre o Projeto  
+O **oMenu4** é um cardápio digital inclusivo, desenvolvido para restaurantes, com foco em **acessibilidade para pessoas com deficiência visual severa e baixa visão**, mas também atendendo ao público em geral.  
 
-O **oMenu4** é um cardápio digital inclusivo, desenvolvido para restaurantes, com foco em **acessibilidade** para pessoas com deficiência visual severa e baixa visão, sem deixar de lado a usabilidade para qualquer cliente.  
-A ideia central é tornar a experiência de atendimento **mais acessível, prática e moderna**, usando tecnologia para reduzir barreiras no dia a dia.
+A aplicação visa tornar a experiência em restaurantes mais **inclusiva, prática e eficiente**, gerenciando todo o fluxo:  
+- 📋 **Fila de espera**  
+- 🪑 **Indicação de mesa livre**  
+- 🍴 **Pedidos**  
+- 💳 **Fechamento da conta e pagamento**  
 
-O sistema contempla:
-- Gerenciamento de fila de espera  
-- Indicação de mesa livre  
-- Realização de pedidos  
-- Fechamento da conta e pagamento  
-- Cadastro e gerenciamento de produtos, mesas e usuários  
-- Relatórios de itens mais vendidos por categoria  
+Além disso, o sistema permite o **cadastro e gerenciamento de produtos, mesas e usuários**, e gera relatórios dos **itens mais vendidos por categoria**.  
 
 ---
 
-## Tecnologias Utilizadas
+## ⚙️ Tecnologias Utilizadas  
 
-- **Backend:** Django / Django REST Framework  
-- **Banco de Dados:** PostgreSQL  
-- **Frontend:** React  
-- **Serviços de Voz / Acessibilidade:** Amazon Polly (Text-to-Speech)  
-
----
-
-## Minha Participação no Projeto
-
-Durante o desenvolvimento do **oMenu4**, minhas principais contribuições foram:
-
-- **Gerenciamento do projeto**: atuei organizando o fluxo de trabalho, distribuindo tarefas e acompanhando os prazos.  
-- **Integração da equipe**: fui responsável por alinhar o trabalho entre backend, frontend e design, garantindo coesão no desenvolvimento.  
-- **Validação com usuários finais**: realizei **entrevistas presenciais com pessoas cegas**, a fim de compreender suas necessidades e validar as soluções propostas.  
-- **Apresentação do projeto**: conduzi a apresentação final para os colegas de curso, comunicando de forma clara os objetivos, diferenciais e funcionalidades do sistema.  
-
-Essa participação me permitiu desenvolver competências em **gestão ágil de projetos, liderança de equipe e contato com usuários para levantamento de requisitos**, além de reforçar a importância da **acessibilidade** no desenvolvimento de soluções digitais.  
+- **Backend:** [Django Rest Framework](https://www.django-rest-framework.org/)  
+- **Banco de Dados:** [PostgreSQL](https://www.postgresql.org/)  
+- **Frontend:** [React](https://reactjs.org/)  
+- **IA de Voz (Text-to-Speech):** [Amazon Polly](https://aws.amazon.com/polly/)  
 
 ---
 
-## Como Executar Localmente
+## 🚀 Funcionalidades  
 
-### ⛑ Pré-requisitos
+✅ **Acessibilidade**  
+- Leitura de menus e opções via IA de voz.  
+- Interfaces com foco em contraste e usabilidade para baixa visão.  
 
-- Python 3.11+  
-- Node.js 18+  
-- PostgreSQL  
-- Docker (opcional)  
+✅ **Gestão do Restaurante**  
+- Cadastro de produtos: pratos, entradas, sobremesas, bebidas e drinks.  
+- Cadastro de mesas do estabelecimento.  
+- Cadastro de usuários do sistema (diretores, administradores, atendentes).  
+- (🔄 Em definição) Cadastro de clientes.  
 
-### 🚀 Passo a Passo
+✅ **Atendimento Digital**  
+- Fila de espera digital.  
+- Indicação automática de mesa livre.  
+- Realização de pedidos online.  
+- Pagamento integrado.  
+- Fechamento da conta pelo sistema.  
 
-1. Clonar o repositório  
+✅ **Inteligência de Negócio**  
+- Relatórios de pedidos.  
+- Indicação dos **itens mais vendidos por categoria**.  
+
+---
+
+## 🙋‍♂️ Minha Participação no Projeto  
+
+Neste projeto, minhas principais contribuições foram:  
+- 📌 **Gerenciamento do projeto**, organizando o fluxo de trabalho e acompanhando prazos.  
+- 🤝 **Integração da equipe**, garantindo alinhamento entre backend, frontend e design.  
+- 🗣️ **Entrevistas com usuários finais (pessoas cegas)**, coletando feedbacks e validando soluções de acessibilidade.  
+- 🎤 **Apresentação do projeto** para os colegas, comunicando os objetivos e diferenciais do sistema.  
+
+Essa experiência me permitiu desenvolver habilidades em **gestão ágil, liderança de equipe, levantamento de requisitos com usuários reais** e reforçar a importância da **acessibilidade digital**.  
+
+---
+
+## 📂 Estrutura do Projeto  
+
+```
+.
+├── backend/            # API Django Rest Framework
+│   ├── apps/           # Módulos (produtos, mesas, pedidos, usuários, etc.)
+│   ├── settings/       # Configurações do Django
+│   └── ...
+├── frontend/           # Aplicação React
+│   ├── src/
+│   │   ├── components/ # Componentes reutilizáveis
+│   │   ├── pages/      # Páginas da aplicação
+│   │   └── services/   # Comunicação com a API
+│   └── ...
+├── docs/               # Documentação
+└── README.md           # Este arquivo
+```
+
+---
+
+## 🛠️ Como Executar Localmente  
+
+### 🔧 Pré-requisitos  
+- [Python 3.11+](https://www.python.org/)  
+- [Node.js 18+](https://nodejs.org/)  
+- [PostgreSQL 15+](https://www.postgresql.org/)  
+
+### ▶️ Passo a passo  
+
+1. **Clone o repositório**  
    ```bash
-   git clone https://github.com/seu-usuario/seu-repo.git
-   cd seu-repo
+   git clone https://github.com/seu-usuario/oMenu4.git
+   cd oMenu4
    ```
 
-2. Backend  
+2. **Configure o backend**  
    ```bash
    cd backend
    pip install -r requirements.txt
@@ -62,30 +102,39 @@ Essa participação me permitiu desenvolver competências em **gestão ágil de 
    python manage.py runserver
    ```
 
-3. Frontend  
+3. **Configure o frontend**  
    ```bash
    cd frontend
    npm install
    npm start
    ```
 
-4. Acesse o app via navegador  
+4. Acesse em:  
    ```
    http://localhost:3000
    ```
 
 ---
 
-## Roadmap / Próximas Funcionalidades
+## 📈 Roadmap  
 
-- Cadastro de clientes  
-- Integração com carteiras digitais (Pix, Apple Pay, etc.)  
-- Recomendações personalizadas via IA  
-- Estatísticas avançadas de consumo  
+- [ ] Cadastro de clientes.  
+- [ ] Integração com carteiras digitais (Pix, Apple Pay, Google Pay).  
+- [ ] Recomendação personalizada via **IA**.  
+- [ ] Estatísticas avançadas de consumo.  
 
 ---
 
-## Licença
+## 🤝 Contribuição  
 
-Projeto desenvolvido como parte da disciplina **Projetos 4** do curso de **Gestão em Tecnologia da Informação** do **CESAR School**.  
-Mantido em colaboração pelos integrantes do Grupo 02.  
+Projeto desenvolvido como parte da disciplina **Projetos 4**.  
+Contribuições apenas dos membros do **Grupo 02**.  
+
+---
+
+## 📜 Licença  
+
+Este projeto é de uso acadêmico. Projeto desenvolvido como parte da disciplina **Projetos 4** do curso de **Gestão em Tecnologia da Informação** do **CESAR School**.  
+Mantido em colaboração pelos integrantes do Grupo 02.    
+
+
